@@ -1,5 +1,5 @@
   :root {
-  --dark-bg: #0ff;
+  --dark-bg: rgb(230, 246, 232);
   --card-bg: #22cd36;
   --text-color: #a02a2a;
   --light-text-color: #ca0d0d;
@@ -98,7 +98,7 @@ nav a:hover {
   border-radius: 50%;
   border: 4px solid var(--primary-color);
   object-fit: cover;
-  box-shadow:20px 20px 12px #000;
+  box-shadow:20px 20px 12px #191212;
 }
 
 .section-title {
@@ -192,7 +192,7 @@ nav a:hover {
 }
 
 .logo-box.github-logo:hover {
-  background-color: #333;
+  background-color: #6f4b4b;
 }
 
 /* Services & Stats */
@@ -240,7 +240,7 @@ nav a:hover {
   text-decoration: none;
   color: var(--text-color);
   padding: 20px 0;
-  border-bottom: 1px solid rgba(217, 116, 116, 0.1);
+  border-bottom: 1px solid rgba(230, 208, 208, 0.1);
   transition: 0.3s;
 }
 
@@ -260,7 +260,7 @@ nav a:hover {
 
 /* Footer */
 .footer {
-  background-color: #000;
+  background-color: #f7f6f6;
   text-align: center;
   padding: 50px 20px;
   margin-top: 80px;
