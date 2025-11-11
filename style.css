@@ -1,0 +1,301 @@
+  :root {
+  --dark-bg: #0ff;
+  --card-bg: #22cd36;
+  --text-color: #a02a2a;
+  --light-text-color: #ca0d0d;
+  --primary-color: #db0f89;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 0 5%;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--primary-color);
+}
+
+.social-nav a {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-left: 25px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.content-left {
+  padding-top: 50px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+}
+
+.content-left h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  border-bottom: 4px solid var(--primary-color);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.bio {
+  color: var(--light-text-color);
+  max-width: 400px;
+}
+
+.image-container {
+  transform: translateY(30px);
+}
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  object-fit: cover;
+  box-shadow:20px 20px 12px #000;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  margin-bottom: 10px;
+}
+
+.show-more {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+  
+  
+/* Client Logos - Colored Boxes */
+.client-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+/* Common Logo Box Style */
+.logo-box {
+  border-radius: 10px;
+  padding: 10px 25px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+/* Snapchat Button */
+.logo-box.snapchat-logo {
+  background-color: #e7e724;
+}
+
+.logo-box.snapchat-logo a {
+  color: #5e748c;
+  text-decoration: none;
+}
+
+.logo-box.snapchat-logo:hover {
+  background-color: #ffdb4d;
+}
+
+/* LinkedIn Button */
+.logo-box.linkedin-logo {
+  background-color: #0077b5;
+}
+
+.logo-box.linkedin-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-box.linkedin-logo:hover {
+  background-color: #1197d5;
+}
+
+/* WhatsApp Button */
+.logo-box.whatsapp-logo {
+  background-color: #25D366;
+}
+
+.logo-box.whatsapp-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-box.whatsapp-logo:hover {
+  background-color: #1ebe5d;
+}
+
+/* GitHub Button */
+.logo-box.github-logo {
+  background-color: #eb0a0a;
+}
+
+.logo-box.github-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-box.github-logo:hover {
+  background-color: #333;
+}
+
+/* Services & Stats */
+.services-and-stats {
+  display: flex;
+  gap: 80px;
+  padding: 100px 0;
+  align-items: flex-start;
+}
+
+.stats-column h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.description-text {
+  color: var(--light-text-color);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.number {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.label {
+  color: var(--light-text-color);
+  font-size: 0.9rem;
+}
+
+.services-list {
+  flex: 1.5;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(217, 116, 116, 0.1);
+  transition: 0.3s;
+}
+
+.service-item:hover {
+  color: var(--primary-color);
+}
+
+.service-image-placeholder {
+  width: 90px;
+  height: 60px;
+  background-color: var(--card-bg);
+  margin-right: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(251, 248, 248, 0.1);
+}
+
+.footer h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: var(--light-text-color);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  margin: 15px 0;
+}
+
+.footer-socials a {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+}
+
+.footer .copyright {
+  color: #0b0000;
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
